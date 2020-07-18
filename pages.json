@@ -4,11 +4,49 @@
 		"style": {
 			"navigationBarTitleText": "uni-ui基础项目"
 		}
+	}, {
+		"path": "pages/message/message",
+		"style": {}
+	}, {
+		"path": "pages/about/about",
+		"style": {}
+	}, {
+		"path": "pages/profile/profile",
+		"style": {}
 	}],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#007AFF",
 		"backgroundColor": "#FFFFFF"
+	},
+	"tabBar":{
+		"list":[{
+			"pagePath":"pages/index/index",
+			"iconPath":"static/tabBarIcon/home.png",
+			"selectedIconPath":"static/tabBarIcon/home_Active.png",
+			"text":"首页"
+		},
+		{
+			"pagePath":"pages/message/message",
+			"iconPath":"static/tabBarIcon/message.png",
+			"selectedIconPath":"static/tabBarIcon/message_Active.png",
+			"text":"消息"
+		},
+		{
+			"pagePath":"pages/about/about",
+			"iconPath":"static/tabBarIcon/about.png",
+			"selectedIconPath":"static/tabBarIcon/about_Active.png",
+			"text":"关于我们"
+		},
+		{
+			"pagePath":"pages/profile/profile",
+			"iconPath":"static/tabBarIcon/profile.png",
+			"selectedIconPath":"static/tabBarIcon/profile_Active.png",
+			"text":"我的"
+		}
+		],
+		"color":"black",
+		"selectedColor":"#37faa2"
 	}
 }
