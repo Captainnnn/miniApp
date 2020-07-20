@@ -13,40 +13,72 @@
 	}, {
 		"path": "pages/profile/profile",
 		"style": {}
+	}, {
+		"path": "pages/index/bookOffice/bookOffice",
+		"style": {
+			"navigationBarTitleText":"办公选址"
+		}
+	}, {
+		"path": "pages/index/bookMeetingRoom/bookMeetingRoom",
+		"style": {
+			"navigationBarTitleText":"订会议室"
+		}
+	}, {
+		"path": "pages/index/bookHall/bookHall",
+		"style": {
+			"navigationBarTitleText":"路演厅"
+		}
+	}, {
+		"path": "pages/index/companyService/companyService",
+		"style": {
+			"navigationBarTitleText":"企业服务"
+		}
+	}, {
+		"path": "pages/index/policyNews/policyNews",
+		"style": {
+			"navigationBarTitleText":"政策资讯"
+		}
+	}, {
+		"path": "pages/index/scanOpenDoor/scanOpenDoor",
+		"style": {
+			"navigationBarTitleText":"扫码开门"
+		}
 	}],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
 		"navigationBarTitleText": "uni-app",
 		"navigationBarBackgroundColor": "#007AFF",
-		"backgroundColor": "#FFFFFF"
+		"backgroundColor": "#FFFFFF",
+		"enablePullDownRefresh": true
 	},
-	"tabBar":{
-		"list":[{
-			"pagePath":"pages/index/index",
-			"iconPath":"static/tabBarIcon/home.png",
-			"selectedIconPath":"static/tabBarIcon/home_Active.png",
-			"text":"首页"
-		},
-		{
-			"pagePath":"pages/message/message",
-			"iconPath":"static/tabBarIcon/message.png",
-			"selectedIconPath":"static/tabBarIcon/message_Active.png",
-			"text":"消息"
-		},
-		{
-			"pagePath":"pages/about/about",
-			"iconPath":"static/tabBarIcon/about.png",
-			"selectedIconPath":"static/tabBarIcon/about_Active.png",
-			"text":"关于我们"
-		},
-		{
-			"pagePath":"pages/profile/profile",
-			"iconPath":"static/tabBarIcon/profile.png",
-			"selectedIconPath":"static/tabBarIcon/profile_Active.png",
-			"text":"我的"
-		}
+	"tabBar": {
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabBarIcon/home.png",
+				"selectedIconPath": "static/tabBarIcon/home_Active.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/message/message",
+				"iconPath": "static/tabBarIcon/message.png",
+				"selectedIconPath": "static/tabBarIcon/message_Active.png",
+				"text": "消息"
+			},
+			{
+				"pagePath": "pages/about/about",
+				"iconPath": "static/tabBarIcon/about.png",
+				"selectedIconPath": "static/tabBarIcon/about_Active.png",
+				"text": "关于我们"
+			},
+			{
+				"pagePath": "pages/profile/profile",
+				"iconPath": "static/tabBarIcon/profile.png",
+				"selectedIconPath": "static/tabBarIcon/profile_Active.png",
+				"text": "我的"
+			}
 		],
-		"color":"black",
-		"selectedColor":"#37faa2"
+		"color": "black",
+		"selectedColor": "#37faa2"
 	}
+
 }

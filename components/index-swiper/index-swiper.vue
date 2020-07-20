@@ -8,32 +8,38 @@
 			</swiper>
 		</view>
 		<view class="function">
-			
-			<view class="main" >
-				<image class="mianIcon office-address" src="../../static/home/bookOffice.png"></image>
-				<view class="text">办公选址</view>
+
+			<!-- <view class="main" @click="toTarget('bookOffice')">
+				<image class="mainIcon office-address" src="../../static/home/bookOffice.png"></image>
+				<view class="mainText">办公选址</view>
+			</view> -->
+
+			<view v-for="item in mainDetail" class="main" @click="toTarget(item.toWhere)">
+				<image class="mainIcon" :class="item.class" :src="item.iconSrc"></image>
+				<view class="mainText">{{item.content}}</view>
+			</view>
+
+			<!-- <view class="main" >
+				<image class="mainIcon book-meetingRoom" src="../../static/home/bookMeetingRoom.png"></image>
+				<view class="mainText">订会议室</view>
 			</view>
 			<view class="main" >
-				<image class="mianIcon book-meetingRoom" src="../../static/home/bookMeetingRoom.png"></image>
-				<view class="text">订会议室</view>
+				<image class="mainIcon book-hall" src="../../static/home/bookHall.png"></image>
+				<view class="mainText">路演厅</view>
 			</view>
 			<view class="main" >
-				<image class="mianIcon book-hall" src="../../static/home/bookHall.png"></image>
-				<view class="text">路演厅</view>
+				<image class="mainIcon company-service" src="../../static/home/companyService.png"></image>
+				<view class="mainText">企业服务</view>
 			</view>
 			<view class="main" >
-				<image class="mianIcon company-service" src="../../static/home/companyService.png"></image>
-				<view class="text">企业服务</view>
+				<image class="mainIcon policy-news" src="../../static/home/policyNews.png"></image>
+				<view class="mainText">政策资讯</view>
 			</view>
 			<view class="main" >
-				<image class="mianIcon policy-news" src="../../static/home/policyNews.png"></image>
-				<view class="text">政策资讯</view>
-			</view>
-			<view class="main" >
-				<image class="mianIcon scan-openDoor" src="../../static/home/scan.png"></image>
-				<view class="text">扫码开门</view>
-			</view>
-			
+				<image class="mainIcon scan-openDoor" src="../../static/home/scan.png"></image>
+				<view class="mainText">扫码开门</view>
+			</view> -->
+
 		</view>
 	</view>
 </template>
@@ -42,8 +48,52 @@
 	export default {
 		data() {
 			return {
+				mainDetail: [{
+						class: "office-address",
+						iconSrc: "../../static/home/bookOffice.png",
+						content: "办公选址",
+						toWhere: "bookOffice"
+					},
+					{
+						class: "office-address",
+						iconSrc: "../../static/home/bookMeetingRoom.png",
+						content: "订会议室",
+						toWhere: "bookMeetingRoom"
+					},
+					{
+						class: "office-address",
+						iconSrc: "../../static/home/bookHall.png",
+						content: "路演厅",
+						toWhere: "bookHall"
+					},
+					{
+						class: "office-address",
+						iconSrc: "../../static/home/companyService.png",
+						content: "企业服务",
+						toWhere: "companyService"
+					},
+					{
+						class: "office-address",
+						iconSrc: "../../static/home/policyNews.png",
+						content: "政策资讯",
+						toWhere: "policyNews"
+					},
+					{
+						class: "office-address",
+						iconSrc: "../../static/home/scan.png",
+						content: "扫码开门",
+						toWhere: "scanOpenDoor"
+					},
+				],
 				indexSwiper: []
 			};
+		},
+		methods: {
+			toTarget(where) {
+				uni.navigateTo({
+					url: "../../pages/index/" + where + "/" + where
+				})
+			}
 		},
 		created() {
 			console.log("created!")
@@ -67,15 +117,18 @@
 		width: 100%;
 		height: 250rpx;
 	}
-	.swiper-container{
+
+	.swiper-container {
 		position: relative;
 		width: 100%;
 		height: 390rpx;
 	}
-	.swiper{
+
+	.swiper {
 		margin: 10rpx;
 	}
-	.function{
+
+	.function {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
@@ -89,17 +142,20 @@
 		/* border-radius: 30rpx; */
 		box-shadow: 0rpx 10rpx 15rpx 0rpx grey;
 	}
-	.main{
+
+	.main {
 		width: 95rpx;
 		height: 100rpx;
 		/* background-color: red; */
 		margin: 15rpx;
 	}
-	.mianIcon{
+
+	.mainIcon {
 		width: 100%;
 		height: 70%;
 	}
-	.text{
+
+	.mainText {
 		font-size: 5rpx;
 		text-align: center;
 	}

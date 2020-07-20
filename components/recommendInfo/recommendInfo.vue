@@ -38,7 +38,7 @@
 	.recommend{
 		/* width: 351rpx; */
 		/* height: 190rpx; */
-		margin: 25rpx 50rpx;
+		margin: 25rpx 30rpx;
 	}
 	.recommend-text{
 		/* display: block; */
@@ -51,6 +51,7 @@
 		width: 100%;
 		height: 330rpx;
 		margin: 0 auto;
+		border: 2rpx solid black;
 	}
 
 </style>
