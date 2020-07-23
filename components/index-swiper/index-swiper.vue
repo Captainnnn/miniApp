@@ -14,7 +14,7 @@
 				<view class="mainText">办公选址</view>
 			</view> -->
 
-			<view v-for="item in mainDetail" class="main" @click="toTarget(item.toWhere)">
+			<view v-for="item in mainDetail" :key="item.id" class="main" @click="toTarget(item.toWhere)">
 				<image class="mainIcon" :class="item.class" :src="item.iconSrc"></image>
 				<view class="mainText">{{item.content}}</view>
 			</view>
@@ -157,6 +157,7 @@
 
 	.mainText {
 		font-size: 5rpx;
+		font-weight: 700;
 		text-align: center;
 	}
 </style>

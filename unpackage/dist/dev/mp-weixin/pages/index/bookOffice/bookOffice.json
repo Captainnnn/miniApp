@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "办公选址",
+  "usingComponents": {
+    "office-list": "/components/officeList/officeList"
+  }
+}

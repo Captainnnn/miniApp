@@ -1,0 +1,1 @@
+<view class="recommend-comtainer"><block wx:for="{{recommendInfo}}" wx:for-item="item" wx:for-index="__i0__"><view class="recommend"><text class="recommend-text">{{'|'+item.name+''}}</text><image class="recommend-icon" src="{{item.path}}" lazy-load="true"></image></view></block></view>

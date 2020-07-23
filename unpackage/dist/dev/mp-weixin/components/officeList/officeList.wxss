@@ -1,0 +1,31 @@
+
+.officeItem {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	/* justify-content: space-between; */
+	margin: 30rpx;
+	width: 680rpx;
+	height: 200rpx;
+	padding: 10rpx;
+}
+.officeIcon {
+	height: 200rpx;
+	width: 50%;
+	border-radius: 20%;
+	margin-right: 20rpx;
+}
+.officeInfo {}
+.officeTitleAndType {
+	font-weight: 700;
+	/* margin-top: 50rpx; */
+}
+.officeAddress {
+	display: block;
+	font-size: 15rpx;
+	margin-top: 30rpx;
+}
+.officePrice {
+	text-align: right;
+}
+

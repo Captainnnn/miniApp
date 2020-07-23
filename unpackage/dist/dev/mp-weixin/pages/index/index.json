@@ -1,6 +1,7 @@
 {
-  "navigationBarTitleText": "uni-ui基础项目",
+  "navigationBarTitleText": "小程序",
   "usingComponents": {
-    "uni-link": "/components/uni-link/uni-link"
+    "index-swiper": "/components/index-swiper/index-swiper",
+    "recommend-info": "/components/recommendInfo/recommendInfo"
   }
 }

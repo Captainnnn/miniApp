@@ -1,7 +1,7 @@
 <template>
 	<view class="office-container">
-
-		<view class="officeItem" v-for="item in officeList">
+																							<!-- 后面换成id这里用src进行测试 -->
+		<view class="officeItem" v-for="item in officeList" :key="item.id" @click="toDetailPage(item.src)">
 
 			<image :src="item.src" class="officeIcon"></image>
 
@@ -33,6 +33,18 @@
 			return {
 				officeList: []
 			};
+		},
+		methods:{
+			toDetailPage(id){
+				getApp().globalData.detailId = id;
+				console.log(getApp().globalData.detailId);
+				uni.navigateTo({
+					url: "../../pages/index/bookOffice/officeDetailPage/officeDetailPage"
+				});
+			}
+		},
+		globalData:{
+			detailId:null
 		},
 		created() {
 			uni.request({

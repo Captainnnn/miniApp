@@ -1,0 +1,49 @@
+
+swiper,
+image {
+	width: 100%;
+	height: 250rpx;
+}
+.swiper-container {
+	position: relative;
+	width: 100%;
+	height: 390rpx;
+}
+.swiper {
+	margin: 10rpx;
+}
+.function {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	        flex-wrap: wrap;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	position: absolute;
+	width: 63%;
+	height: 250rpx;
+	bottom: 1rpx;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
+	background: rgba(207, 207, 207, 0.6);
+	/* border-radius: 30rpx; */
+	box-shadow: 0rpx 10rpx 15rpx 0rpx grey;
+}
+.main {
+	width: 95rpx;
+	height: 100rpx;
+	/* background-color: red; */
+	margin: 15rpx;
+}
+.mainIcon {
+	width: 100%;
+	height: 70%;
+}
+.mainText {
+	font-size: 5rpx;
+	text-align: center;
+}
+
