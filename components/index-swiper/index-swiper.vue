@@ -138,7 +138,7 @@
 		bottom: 1rpx;
 		left: 50%;
 		transform: translateX(-50%);
-		background: rgba(207, 207, 207, 0.6);
+		background: rgba(207, 207, 207, 0.5);
 		/* border-radius: 30rpx; */
 		box-shadow: 0rpx 10rpx 15rpx 0rpx grey;
 	}
