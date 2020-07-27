@@ -9,7 +9,9 @@
 		"pages/index/bookHall/bookHall",
 		"pages/index/companyService/companyService",
 		"pages/index/policyNews/policyNews",
-		"pages/index/scanOpenDoor/scanOpenDoor"
+		"pages/index/scanOpenDoor/scanOpenDoor",
+		"pages/index/bookOffice/officeDetailPage/officeDetailPage",
+		"pages/index/bookHall/hallDetail/hallDetail"
 	],
 	"subPackages": [],
 	"window": {
@@ -50,5 +52,5 @@
 		"selectedColor": "#37faa2"
 	},
 	"usingComponents": {},
-	"sitemapLocation": "sitemap.json"
+	"sitemapLocation": "sitemap52.json"
 }

@@ -39,7 +39,7 @@
 				getApp().globalData.detailId = id;
 				console.log(getApp().globalData.detailId);
 				uni.navigateTo({
-					url: "../../pages/index/bookOffice/officeDetailPage/officeDetailPage"
+					url: "officeDetailPage/officeDetailPage"
 				});
 			}
 		},

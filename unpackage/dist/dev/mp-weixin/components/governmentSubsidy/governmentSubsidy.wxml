@@ -1,0 +1,1 @@
+<view class="policy-container"><block wx:for="{{governmentSubsidyList}}" wx:for-item="item" wx:for-index="__i0__" wx:key="id"><block wx:if="{{item.type===1}}"><view class="policyItem"><view class="policyTitle">{{''+item.title+''}}</view><image class="policyImg" src="{{item.imgSrc}}"></image></view></block></block></view>

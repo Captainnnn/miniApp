@@ -2,7 +2,7 @@
 	<view>
 		
 		
-		<view class="listItem" v-for="item in humanList" v-if="item.type===4">
+		<view class="listItem" v-for="item in humanList" :key="item.imgSrc" v-if="item.type===4">
 		
 			<image class="itemImg" :src="item.imgSrc"></image>
 		

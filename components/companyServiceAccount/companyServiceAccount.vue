@@ -2,7 +2,7 @@
 	<view>
 
 
-		<view class="listItem" v-for="item in accountList" v-if="item.type===2">
+		<view class="listItem" v-for="item in accountList" :key="item.imgSrc" v-if="item.type===2">
 
 			<image class="itemImg" :src="item.imgSrc"></image>
 

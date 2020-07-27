@@ -1,4 +1,9 @@
 {
   "navigationBarTitleText": "政策资讯",
-  "usingComponents": {}
+  "usingComponents": {
+    "uni-segmented-control": "/components/uni-segmented-control/uni-segmented-control",
+    "government-subsidy": "/components/governmentSubsidy/governmentSubsidy",
+    "industry-policy": "/components/industryPolicy/industryPolicy",
+    "government-files": "/components/governmentFiles/governmentFiles"
+  }
 }

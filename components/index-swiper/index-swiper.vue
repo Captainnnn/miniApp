@@ -2,7 +2,7 @@
 	<view class="swiper-container">
 		<view class="swiper">
 			<swiper autoplay="true" circular="true">
-				<swiper-item v-for="item in indexSwiper">
+				<swiper-item v-for="item in indexSwiper" :key="item.iconPath">
 					<image :src="item.iconPath"></image>
 				</swiper-item>
 			</swiper>
@@ -14,7 +14,7 @@
 				<view class="mainText">办公选址</view>
 			</view> -->
 
-			<view v-for="item in mainDetail" :key="item.id" class="main" @click="toTarget(item.toWhere)">
+			<view v-for="item in mainDetail" :key="item.id" class="main" :data-where="item.toWhere" @click="toTarget($event)">
 				<image class="mainIcon" :class="item.class" :src="item.iconSrc"></image>
 				<view class="mainText">{{item.content}}</view>
 			</view>
@@ -89,9 +89,16 @@
 			};
 		},
 		methods: {
-			toTarget(where) {
+			toTarget(event) {
+				// console.log(event.currentTarget.dataset.where);
 				uni.navigateTo({
-					url: "../../pages/index/" + where + "/" + where
+					url: event.currentTarget.dataset.where + "/" + event.currentTarget.dataset.where,
+					success: (e) => {
+						console.log(e);
+					},
+					fail: (e) => {
+						console.log(e);
+					}
 				})
 			}
 		},
@@ -101,7 +108,7 @@
 				url: "https://mock.yonyoucloud.com/mock/11982/getSwiper",
 				success: (res) => {
 					this.indexSwiper = res.data.swiper;
-					// console.log(this.indexSwiper);
+					console.log(this.indexSwiper);
 				}
 			})
 		},

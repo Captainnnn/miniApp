@@ -2,7 +2,7 @@
 	<view class="policy-container">
 
 
-		<view class="policyItem" v-for="item in governmentSubsidyList" v-if="item.type === 1">
+		<view class="policyItem" v-for="item in governmentSubsidyList" :key="item.id" v-if="item.type === 1">
 
 
 			<view class="policyTitle">

@@ -2,7 +2,7 @@
 	<view>
 		
 		
-		<view class="listItem" v-for="item in knowledgeList" v-if="item.type===3">
+		<view class="listItem" v-for="item in knowledgeList" :key="item.imgSrc" v-if="item.type===3">
 		
 			<image class="itemImg" :src="item.imgSrc"></image>
 		
