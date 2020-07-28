@@ -99,7 +99,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "components", function() { return components; });
 var components = {
   indexSwiper: function() {
-    return __webpack_require__.e(/*! import() | components/index-swiper/index-swiper */ "components/index-swiper/index-swiper").then(__webpack_require__.bind(null, /*! @/components/index-swiper/index-swiper.vue */ 87))
+    return __webpack_require__.e(/*! import() | components/index-swiper/index-swiper */ "components/index-swiper/index-swiper").then(__webpack_require__.bind(null, /*! @/components/index-swiper/index-swiper.vue */ 85))
   }
 }
 var render = function() {
@@ -137,7 +137,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var indexSwiper = function indexSwiper() {__webpack_require__.e(/*! require.ensure | components/index-swiper/index-swiper */ "components/index-swiper/index-swiper").then((function () {return resolve(__webpack_require__(/*! ../../components/index-swiper/index-swiper.vue */ 87));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var recommendInfo = function recommendInfo() {__webpack_require__.e(/*! require.ensure | components/recommendInfo/recommendInfo */ "components/recommendInfo/recommendInfo").then((function () {return resolve(__webpack_require__(/*! ../../components/recommendInfo/recommendInfo.vue */ 94));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var indexSwiper = function indexSwiper() {__webpack_require__.e(/*! require.ensure | components/index-swiper/index-swiper */ "components/index-swiper/index-swiper").then((function () {return resolve(__webpack_require__(/*! ../../components/index-swiper/index-swiper.vue */ 85));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var recommendInfo = function recommendInfo() {__webpack_require__.e(/*! require.ensure | components/recommendInfo/recommendInfo */ "components/recommendInfo/recommendInfo").then((function () {return resolve(__webpack_require__(/*! ../../components/recommendInfo/recommendInfo.vue */ 92));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 

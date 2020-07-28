@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "路演厅详情",
+  "usingComponents": {
+    "hall-detail": "/components/hallDetail/hallDetail"
+  }
+}

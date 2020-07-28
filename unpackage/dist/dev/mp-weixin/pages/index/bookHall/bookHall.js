@@ -130,7 +130,7 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var hallList = function hallList() {__webpack_require__.e(/*! require.ensure | components/hallList/hallList */ "components/hallList/hallList").then((function () {return resolve(__webpack_require__(/*! ../../../components/hallList/hallList.vue */ 108));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var hallHeader = function hallHeader() {__webpack_require__.e(/*! require.ensure | components/hallHeader/hallHeader */ "components/hallHeader/hallHeader").then((function () {return resolve(__webpack_require__(/*! ../../../components/hallHeader/hallHeader.vue */ 115));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var hallList = function hallList() {__webpack_require__.e(/*! require.ensure | components/hallList/hallList */ "components/hallList/hallList").then((function () {return resolve(__webpack_require__(/*! ../../../components/hallList/hallList.vue */ 106));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var hallHeader = function hallHeader() {__webpack_require__.e(/*! require.ensure | components/hallHeader/hallHeader */ "components/hallHeader/hallHeader").then((function () {return resolve(__webpack_require__(/*! ../../../components/hallHeader/hallHeader.vue */ 113));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 
 
 

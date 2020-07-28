@@ -49,7 +49,7 @@
 			"navigationBarTitleText": "办公详情"
 		}
 	}, {
-		"path": "pages/index/bookHall/hallDetail/hallDetail",
+		"path": "pages/index/bookHall/hallDetailPage/hallDetailPage",
 		"style": {
 			"navigationBarTitleText": "路演厅详情"
 		}

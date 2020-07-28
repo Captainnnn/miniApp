@@ -85,6 +85,7 @@
 	.officeAddress {
 		display: block;
 		font-size: 15rpx;
+		color: #919191;
 		margin-top: 30rpx;
 	}
 

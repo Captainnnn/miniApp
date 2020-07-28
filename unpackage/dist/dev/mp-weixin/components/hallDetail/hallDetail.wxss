@@ -1,0 +1,101 @@
+
+.hallTitle {
+	display: block;
+	font-weight: 700;
+	margin: 10rpx 0 20rpx 26rpx;
+}
+.scoreAndFeature {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	margin-left: 26rpx;
+	margin-bottom: 15rpx;
+}
+.score {
+	/* margin-top: 20rpx; */
+}
+.hallFeature {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	        flex: 1;
+}
+.feature {
+	
+	font-size: 25rpx;
+	border: 1rpx solid #919191;
+	border-radius: 10rpx;
+	margin-left: 30rpx;
+	padding: 5rpx;
+}
+.hallSwiper {
+	position: relative;
+	/* display: block; */
+	width: 80%;
+	margin-top: 15rpx;
+	left: 50%;
+	-webkit-transform: translate(-50%);
+	        transform: translate(-50%);
+}
+.img {
+	width: 100%;
+	margin: 0 10rpx;
+}
+.address {
+	display: block;
+	margin: 15rpx 26rpx;
+	font-size: 25rpx;
+	color: #646464;
+}
+.priceAndPerson {
+	width: 100%;
+	height: 60rpx;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	font-size: 30rpx;
+	margin: 15rpx 26rpx 0 26rpx;
+}
+.price {
+	line-height: 60rpx;
+}
+.person {
+	margin-left: 100rpx;
+}
+.personImg {
+	width: 60rpx;
+	height: 60rpx;
+	vertical-align: middle;
+}
+.personNum {
+	font-size: 26rpx;
+	margin-left: 10rpx;
+}
+.hallBusinessTime {
+	color: #55f470;
+	font-size: 30rpx;
+	margin-left: 26rpx;
+}
+.phone {
+	font-size: 30rpx;
+	margin: 15rpx 26rpx;
+}
+.phoneImg {
+	width: 60rpx;
+	height: 60rpx;
+	vertical-align: middle;
+	margin-left: 20rpx;
+}
+.advance {
+	background-color: #ff6201;
+	position: fixed;
+	/* width: 300rpx; */
+	height: 80rpx;
+	line-height: 80rpx;
+	font-size: 40rpx;
+	right: 0;
+	bottom: 0;
+}
+

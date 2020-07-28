@@ -1,0 +1,1 @@
+<view><hall-detail vue-id="1e72b724-1" hallId="{{detailId}}" bind:__l="__l"></hall-detail></view>

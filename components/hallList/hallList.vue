@@ -3,8 +3,8 @@
 		
 		
 		
-		
-		<view class="hallItem" v-for="item in hallList" :key="item.title" @click="toHallDetail">
+																																					<!-- 后面换成id -->
+		<view class="hallItem" v-for="item in hallList" :key="item.title" :data-curId="item.imgSrc" @click="toHallDetail($event)">
 			
 			
 			
@@ -16,7 +16,7 @@
 					
 					<view class="hallTitle">{{item.title}}</view>
 					<view class="hallScore">
-						<uni-rate disabled="true" size="17" :value="item.score" color="#cccccc" active-color="#ff2c04"></uni-rate>
+						<uni-rate readonly="true" size="17" :value="item.score" color="#cccccc" activeColor="#ff2c04"></uni-rate>
 					<!-- {{item.score}} -->
 					</view>
 					
@@ -50,10 +50,6 @@
 		
 		
 		
-		
-		
-		
-		
 	</view>
 </template>
 
@@ -67,9 +63,10 @@
 			};
 		},
 		methods:{
-			toHallDetail(){
+			toHallDetail(event){
+				// console.log(event.currentTarget.dataset.curid);
 				uni.navigateTo({
-					url:"hallDetail/hallDetail",
+					url:"hallDetailPage/hallDetailPage?id=" + event.currentTarget.dataset.curid,
 					success: () => {
 						console.log("success!")
 					},

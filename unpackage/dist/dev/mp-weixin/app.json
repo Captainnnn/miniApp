@@ -11,7 +11,7 @@
 		"pages/index/policyNews/policyNews",
 		"pages/index/scanOpenDoor/scanOpenDoor",
 		"pages/index/bookOffice/officeDetailPage/officeDetailPage",
-		"pages/index/bookHall/hallDetail/hallDetail"
+		"pages/index/bookHall/hallDetailPage/hallDetailPage"
 	],
 	"subPackages": [],
 	"window": {
@@ -52,5 +52,5 @@
 		"selectedColor": "#37faa2"
 	},
 	"usingComponents": {},
-	"sitemapLocation": "sitemap52.json"
+	"sitemapLocation": "sitemap26.json"
 }
