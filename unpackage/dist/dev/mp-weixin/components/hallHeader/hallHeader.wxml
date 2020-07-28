@@ -1,0 +1,1 @@
+<view><view class="headerItem"><image class="headerImg" src="{{headerBackGround}}"></image><text class="headerText">路 演 厅</text></view></view>

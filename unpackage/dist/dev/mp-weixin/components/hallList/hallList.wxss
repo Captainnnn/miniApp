@@ -1,0 +1,64 @@
+
+.background{
+	padding: 10rpx;
+}
+.hallItem{
+	width: 80%;
+	background-color: #FFFFFF;
+	margin: 30rpx auto;
+	padding: 10rpx;
+	/* border: 1rpx solid; */
+	border-radius: 30rpx;
+}
+.hallBody{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+}
+.readDetail{
+	display: block;
+	text-align: center;
+	font-size: 25rpx;
+	color: #646566;
+}
+.hallImg{
+	width: 40%;
+	height: 150rpx;
+	margin: 10rpx;
+}
+.hallInfo{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	margin-left: 10rpx;
+}
+.hallTitle{
+	font-weight: 700;
+	font-size: smaller;
+	margin-bottom: 20rpx;
+}
+.hallScore{
+}
+.hallFeature{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+}
+.feature{
+	font-size: 15rpx;
+	border: 1rpx solid #7e7e7e;
+	color: #393939;
+	border-radius: 8rpx;
+	margin: 10rpx;
+	padding: 3rpx;
+}
+.hallBusinessTime{
+	font-size: 10rpx;
+	padding: 5rpx;
+}
+
+

@@ -1,10 +1,12 @@
 <template>
-	<view>
-		11111
-	</view>
+	
+	<office-detail></office-detail>
+	
 </template>
 
 <script>
+	import officeDetail from "../../../../components/officeDetail/officeDetail.vue"
+	
 	export default {
 		data() {
 			return {
@@ -12,14 +14,17 @@
 			}
 		},
 		methods: {
-			
+
 		},
 		created() {
-			console.log(getApp().globalData.detailId);
+			
+		},
+		components:{
+			officeDetail
 		}
 	}
 </script>
 
 <style>
-
+	
 </style>

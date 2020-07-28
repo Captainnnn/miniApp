@@ -1,4 +1,6 @@
 {
   "navigationBarTitleText": "办公详情",
-  "usingComponents": {}
+  "usingComponents": {
+    "office-detail": "/components/officeDetail/officeDetail"
+  }
 }

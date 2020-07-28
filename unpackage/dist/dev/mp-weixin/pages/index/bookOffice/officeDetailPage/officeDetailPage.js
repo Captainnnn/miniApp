@@ -128,13 +128,15 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
-//
-//
-//
-//
-//
-var _default =
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var officeDetail = function officeDetail() {__webpack_require__.e(/*! require.ensure | components/officeDetail/officeDetail */ "components/officeDetail/officeDetail").then((function () {return resolve(__webpack_require__(/*! ../../../../components/officeDetail/officeDetail.vue */ 183));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+
+
+
+
+
+
+
+
 {
   data: function data() {
     return {};
@@ -145,8 +147,10 @@ var _default =
 
 
   created: function created() {
-    console.log(getApp().globalData.detailId);
-  } };exports.default = _default;
+
+  },
+  components: {
+    officeDetail: officeDetail } };exports.default = _default;
 
 /***/ })
 

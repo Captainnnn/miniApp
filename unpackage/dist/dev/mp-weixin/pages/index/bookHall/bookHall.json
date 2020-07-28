@@ -1,4 +1,7 @@
 {
   "navigationBarTitleText": "路演厅",
-  "usingComponents": {}
+  "usingComponents": {
+    "hall-list": "/components/hallList/hallList",
+    "hall-header": "/components/hallHeader/hallHeader"
+  }
 }

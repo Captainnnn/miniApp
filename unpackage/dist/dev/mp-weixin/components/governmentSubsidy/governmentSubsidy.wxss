@@ -1,0 +1,19 @@
+
+.policyItem {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	margin: 15rpx;
+	padding: 15rpx;
+	border-radius: 25rpx;
+	box-shadow: 0 3rpx 20rpx 2rpx rgba(177, 177, 177, 0.3);
+}
+.policyTitle {
+	font-weight: 700;
+	width: 70%;
+}
+.policyImg {
+	width: 200rpx;
+	height: 150rpx;
+}
+

@@ -1,4 +1,11 @@
 {
   "navigationBarTitleText": "企业服务",
-  "usingComponents": {}
+  "usingComponents": {
+    "uni-segmented-control": "/components/uni-segmented-control/uni-segmented-control",
+    "company-service-secretary": "/components/companyServiceSecretary/companyServiceSecretary",
+    "company-service-account": "/components/companyServiceAccount/companyServiceAccount",
+    "company-service-knowledge": "/components/companyServiceKnowledge/companyServiceKnowledge",
+    "company-service-human": "/components/companyServiceHuman/companyServiceHuman",
+    "company-service-hire": "/components/companyServiceHire/companyServiceHire"
+  }
 }

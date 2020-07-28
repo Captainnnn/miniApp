@@ -1,1 +1,1 @@
-<view>路演厅</view>
+<view class="bgcolor"><hall-header vue-id="5fed9a1d-1" bind:__l="__l"></hall-header><hall-list vue-id="5fed9a1d-2" bind:__l="__l"></hall-list></view>

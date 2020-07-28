@@ -1,7 +1,7 @@
 <template>
 		<view class="recommend-comtainer">
 			
-			<view class="recommend" v-for="item in recommendInfo">
+			<view class="recommend" v-for="item in recommendInfo" :key="item.path">
 				<text class="recommend-text">
 					|{{item.name}}
 				</text>

@@ -39,7 +39,7 @@
 				getApp().globalData.detailId = id;
 				console.log(getApp().globalData.detailId);
 				uni.navigateTo({
-					url: "../../pages/index/bookOffice/officeDetailPage/officeDetailPage"
+					url: "officeDetailPage/officeDetailPage"
 				});
 			}
 		},
@@ -85,6 +85,7 @@
 	.officeAddress {
 		display: block;
 		font-size: 15rpx;
+		color: #919191;
 		margin-top: 30rpx;
 	}
 
