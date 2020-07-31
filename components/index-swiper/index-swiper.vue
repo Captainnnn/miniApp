@@ -2,43 +2,21 @@
 	<view class="swiper-container">
 		<view class="swiper">
 			<swiper autoplay="true" circular="true">
-				<swiper-item v-for="item in indexSwiper" :key="item.iconPath">
-					<image :src="item.iconPath"></image>
+				<swiper-item v-for="item in indexSwiper" :key="item.image_url">
+					<image :src="item.image_url"></image>
 				</swiper-item>
 			</swiper>
 		</view>
 		<view class="function">
 
-			<!-- <view class="main" @click="toTarget('bookOffice')">
-				<image class="mainIcon office-address" src="../../static/home/bookOffice.png"></image>
-				<view class="mainText">办公选址</view>
-			</view> -->
+			
 
 			<view v-for="item in mainDetail" :key="item.id" class="main" :data-where="item.toWhere" @click="toTarget($event)">
 				<image class="mainIcon" :class="item.class" :src="item.iconSrc"></image>
 				<view class="mainText">{{item.content}}</view>
 			</view>
 
-			<!-- <view class="main" >
-				<image class="mainIcon book-meetingRoom" src="../../static/home/bookMeetingRoom.png"></image>
-				<view class="mainText">订会议室</view>
-			</view>
-			<view class="main" >
-				<image class="mainIcon book-hall" src="../../static/home/bookHall.png"></image>
-				<view class="mainText">路演厅</view>
-			</view>
-			<view class="main" >
-				<image class="mainIcon company-service" src="../../static/home/companyService.png"></image>
-				<view class="mainText">企业服务</view>
-			</view>
-			<view class="main" >
-				<image class="mainIcon policy-news" src="../../static/home/policyNews.png"></image>
-				<view class="mainText">政策资讯</view>
-			</view>
-			<view class="main" >
-				<image class="mainIcon scan-openDoor" src="../../static/home/scan.png"></image>
-				<view class="mainText">扫码开门</view>
-			</view> -->
+			
 
 		</view>
 	</view>
@@ -105,9 +83,10 @@
 		created() {
 			console.log("created!")
 			uni.request({
-				url: "https://mock.yonyoucloud.com/mock/11982/getSwiper",
+				url: getApp().globalData.baseUrl + "home/banner",
 				success: (res) => {
-					this.indexSwiper = res.data.swiper;
+					// console.log(res);
+					this.indexSwiper = res.data.data;
 					console.log(this.indexSwiper);
 				}
 			})
@@ -122,7 +101,7 @@
 	swiper,
 	image {
 		width: 100%;
-		height: 250rpx;
+		height: 275rpx;
 	}
 
 	.swiper-container {
