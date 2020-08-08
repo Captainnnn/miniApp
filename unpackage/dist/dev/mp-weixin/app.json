@@ -3,7 +3,7 @@
     "pages/index/index",
     "pages/message/message",
     "pages/about/about",
-    "pages/profile/profile",
+    "pages/me/me",
     "pages/index/bookOffice/bookOffice",
     "pages/index/bookMeetingRoom/bookMeetingRoom",
     "pages/index/bookHall/bookHall",
@@ -11,7 +11,13 @@
     "pages/index/policyNews/policyNews",
     "pages/index/scanOpenDoor/scanOpenDoor",
     "pages/index/bookOffice/officeDetailPage/officeDetailPage",
-    "pages/index/bookHall/hallDetailPage/hallDetailPage"
+    "pages/index/bookHall/hallDetailPage/hallDetailPage",
+    "pages/me/mycoupan",
+    "pages/me/feedback",
+    "pages/me/invitevisitor",
+    "pages/me/visitordetail",
+    "components/QS-coupon/coupan",
+    "pages/index/bookMeetingRoom/meetingRoomDetailPage/meetingRoomDetailPage"
   ],
   "subPackages": [],
   "window": {
@@ -42,7 +48,7 @@
         "text": "关于我们"
       },
       {
-        "pagePath": "pages/profile/profile",
+        "pagePath": "pages/me/me",
         "iconPath": "static/tabBarIcon/profile.png",
         "selectedIconPath": "static/tabBarIcon/profile_Active.png",
         "text": "我的"

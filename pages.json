@@ -6,13 +6,19 @@
 		}
 	}, {
 		"path": "pages/message/message",
-		"style": {}
+		"style": {
+			"navigationBarTitleText": "消息页面"
+		}
 	}, {
 		"path": "pages/about/about",
-		"style": {}
+		"style": {
+			"navigationBarTitleText": "关于我们"
+		}
 	}, {
-		"path": "pages/profile/profile",
-		"style": {}
+		"path": "pages/me/me",
+		"style": {
+			"navigationBarTitleText": "我的"
+		}
 	}, {
 		"path": "pages/index/bookOffice/bookOffice",
 		"style": {
@@ -53,6 +59,32 @@
 		"style": {
 			"navigationBarTitleText": "路演厅详情"
 		}
+	}, {
+		"path": "pages/me/mycoupan",
+		"style": {
+			"navigationBarTitleText": "我的优惠券"
+		}
+	}, {
+		"path": "pages/me/feedback",
+		"style": {
+			"navigationBarTitleText": "意见反馈"
+		}
+	}, {
+		"path": "pages/me/invitevisitor",
+		"style": {
+			"navigationBarTitleText": "访客邀请"
+		}
+	}, {
+		"path": "pages/me/visitordetail",
+		"style": {
+			"navigationBarTitleText": "访客详情"
+		}
+	}, {
+		"path": "components/QS-coupon/coupan",
+		"style": {}
+	}, {
+		"path": "pages/index/bookMeetingRoom/meetingRoomDetailPage/meetingRoomDetailPage",
+		"style": {}
 	}],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
@@ -81,7 +113,7 @@
 				"text": "关于我们"
 			},
 			{
-				"pagePath": "pages/profile/profile",
+				"pagePath": "pages/me/me",
 				"iconPath": "static/tabBarIcon/profile.png",
 				"selectedIconPath": "static/tabBarIcon/profile_Active.png",
 				"text": "我的"

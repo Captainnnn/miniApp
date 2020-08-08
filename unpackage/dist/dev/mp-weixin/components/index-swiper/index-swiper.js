@@ -138,28 +138,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 var _default =
 {
   data: function data() {
@@ -221,9 +199,10 @@ var _default =
   created: function created() {var _this = this;
     console.log("created!");
     uni.request({
-      url: "https://mock.yonyoucloud.com/mock/11982/getSwiper",
+      url: getApp().globalData.baseUrl + "home/banner",
       success: function success(res) {
-        _this.indexSwiper = res.data.swiper;
+        // console.log(res);
+        _this.indexSwiper = res.data.data;
         console.log(_this.indexSwiper);
       } });
 

@@ -4,30 +4,30 @@
 		
 		
 																																					<!-- 后面换成id -->
-		<view class="hallItem" v-for="item in hallList" :key="item.title" :data-curId="item.imgSrc" @click="toHallDetail($event)">
+		<view class="hallItem" v-for="item in hallList" :key="item.name" :data-curId="item.id" @click="toHallDetail($event)">
 			
 			
 			
 			<view class="hallBody">
 				
-				<image class="hallImg" :src="item.imgSrc"></image>
+				<image class="hallImg" :src="item.image_url"></image>
 				
 				<view class="hallInfo">
 					
-					<view class="hallTitle">{{item.title}}</view>
+					<view class="hallTitle">{{item.name}}</view>
 					<view class="hallScore">
-						<uni-rate readonly="true" size="17" :value="item.score" color="#cccccc" activeColor="#ff2c04"></uni-rate>
+						<uni-rate readonly="true" size="17" :value="item.star" color="#cccccc" activeColor="#ff2c04"></uni-rate>
 					<!-- {{item.score}} -->
 					</view>
 					
 					<view class="hallFeature">
 						
-						<view class="feature" v-for="fe in item.feature" :key="fe">{{fe}}</view>
+						<view class="feature" v-for="tag in item.tags" :key="tag">{{tag}}</view>
 						
 						
 					</view>
 					
-					<view class="hallBusinessTime">{{item.businessTime}}</view>
+					<view class="hallBusinessTime">{{item.free_time}}</view>
 					
 				</view>
 				
@@ -81,7 +81,7 @@
 		},
 		created() {
 			uni.request({
-				url:"https://mock.yonyoucloud.com/mock/11982/hall",
+				url: getApp().globalData.baseUrl + "roadshow/brief?start=0&limit=10",
 				success: (res) => {
 					this.hallList = res.data.data;
 					console.log(this.hallList);

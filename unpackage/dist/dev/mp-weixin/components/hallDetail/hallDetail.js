@@ -79,6 +79,9 @@ __webpack_require__.r(__webpack_exports__);
 var components = {
   uniRate: function() {
     return __webpack_require__.e(/*! import() | components/uni-rate/uni-rate */ "components/uni-rate/uni-rate").then(__webpack_require__.bind(null, /*! @/components/uni-rate/uni-rate.vue */ 151))
+  },
+  uniPopup: function() {
+    return Promise.all(/*! import() | components/uni-popup/uni-popup */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/uni-popup/uni-popup")]).then(__webpack_require__.bind(null, /*! @/components/uni-popup/uni-popup.vue */ 314))
   }
 }
 var render = function() {
@@ -118,7 +121,17 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var uniRate = function uniRate() {__webpack_require__.e(/*! require.ensure | components/uni-rate/uni-rate */ "components/uni-rate/uni-rate").then((function () {return resolve(__webpack_require__(/*! ../uni-rate/uni-rate.vue */ 151));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var uniRate = function uniRate() {__webpack_require__.e(/*! require.ensure | components/uni-rate/uni-rate */ "components/uni-rate/uni-rate").then((function () {return resolve(__webpack_require__(/*! ../uni-rate/uni-rate.vue */ 151));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var uniPopup = function uniPopup() {Promise.all(/*! require.ensure | components/uni-popup/uni-popup */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/uni-popup/uni-popup")]).then((function () {return resolve(__webpack_require__(/*! ../uni-popup/uni-popup.vue */ 314));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var uniPopupMessage = function uniPopupMessage() {__webpack_require__.e(/*! require.ensure | components/uni-popup/uni-popup-message */ "components/uni-popup/uni-popup-message").then((function () {return resolve(__webpack_require__(/*! ../uni-popup/uni-popup-message.vue */ 323));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var uniPopupDialog = function uniPopupDialog() {__webpack_require__.e(/*! require.ensure | components/uni-popup/uni-popup-dialog */ "components/uni-popup/uni-popup-dialog").then((function () {return resolve(__webpack_require__(/*! ../uni-popup/uni-popup-dialog.vue */ 330));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -198,9 +211,21 @@ __webpack_require__.r(__webpack_exports__);
 {
   data: function data() {
     return {
-      hallInfo: {} };
+      hallInfo: {
+        contact_name: "",
+        contact_phone: "",
+        contact_wx: "" } };
+
 
   },
+  methods: {
+    openDialog: function openDialog() {
+      this.$refs.popup.open();
+    },
+    confirm: function confirm(done) {
+      done();
+    } },
+
   props: {
     hallId: {
       type: String,
@@ -210,7 +235,7 @@ __webpack_require__.r(__webpack_exports__);
   created: function created() {var _this = this;
     console.log(this.hallId);
     uni.request({
-      url: "https://mock.yonyoucloud.com/mock/11982/hallDetail?id=" + this.hallId,
+      url: getApp().globalData.baseUrl + "roadshow/detailed?id=" + this.hallId,
       success: function success(res) {
         _this.hallInfo = res.data.data;
         console.log(_this.hallInfo);
@@ -218,7 +243,10 @@ __webpack_require__.r(__webpack_exports__);
 
   },
   components: {
-    uniRate: uniRate } };exports.default = _default;
+    uniRate: uniRate,
+    uniPopup: uniPopup,
+    uniPopupMessage: uniPopupMessage,
+    uniPopupDialog: uniPopupDialog } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),

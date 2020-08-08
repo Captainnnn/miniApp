@@ -201,7 +201,7 @@ __webpack_require__.r(__webpack_exports__);
 
   created: function created() {var _this = this;
     uni.request({
-      url: "https://mock.yonyoucloud.com/mock/11982/hall",
+      url: getApp().globalData.baseUrl + "roadshow/brief?start=0&limit=10",
       success: function success(res) {
         _this.hallList = res.data.data;
         console.log(_this.hallList);

@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "meeting-room-detail": "/components/meetingRoomDetail/meetingRoomDetail"
+  }
+}

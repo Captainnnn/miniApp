@@ -23,7 +23,7 @@
 	        flex: 1;
 }
 .feature {
-	
+
 	font-size: 25rpx;
 	border: 1rpx solid #919191;
 	border-radius: 10rpx;
@@ -56,7 +56,7 @@
 	display: -webkit-flex;
 	display: flex;
 	font-size: 30rpx;
-	margin: 15rpx 26rpx 0 26rpx;
+	margin: 30rpx 26rpx 0 26rpx;
 }
 .price {
 	line-height: 60rpx;
@@ -74,13 +74,14 @@
 	margin-left: 10rpx;
 }
 .hallBusinessTime {
+	display: block;
 	color: #55f470;
 	font-size: 30rpx;
-	margin-left: 26rpx;
+	margin: 20rpx 0 0 26rpx;
 }
 .phone {
 	font-size: 30rpx;
-	margin: 15rpx 26rpx;
+	margin: 30rpx 26rpx;
 }
 .phoneImg {
 	width: 60rpx;
