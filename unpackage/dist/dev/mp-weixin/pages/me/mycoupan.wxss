@@ -1,0 +1,25 @@
+
+.swiper.data-v-1f775e4e{
+	height: 92vh;
+}
+.box.data-v-1f775e4e{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	height: 100rpx;
+	line-height: 100rpx;
+	-webkit-justify-content: space-around;
+	        justify-content: space-around;
+	font-weight: 500;
+}
+.line.data-v-1f775e4e{
+	background-color: #C0C0C0;
+	height: 10rpx;
+	width: 100vw;
+}
+.active.data-v-1f775e4e{
+	color: #39B54A;
+	-webkit-animation-duration: 150ms;
+	        animation-duration: 150ms;
+}
+
