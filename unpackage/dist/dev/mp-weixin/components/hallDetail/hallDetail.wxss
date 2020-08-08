@@ -23,7 +23,7 @@
 	        flex: 1;
 }
 .feature {
-	
+
 	font-size: 25rpx;
 	border: 1rpx solid #919191;
 	border-radius: 10rpx;

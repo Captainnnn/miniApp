@@ -5,7 +5,7 @@
 		</view>
 		<view class="uni-combox__input-box">
 			<input class="uni-combox__input" type="text" :placeholder="placeholder" v-model="inputVal" @input="onInput" @focus="onFocus" @blur="onBlur" />
-			<uni-icons class="uni-combox__input-arrow" type="arrowdown" size="14" @click="toggleSelector"></uni-icons>
+			<!-- <uni-icons class="uni-combox__input-arrow" type="arrowdown" size="14" @click="toggleSelector"></uni-icons> -->
 			<view class="uni-combox__selector" v-if="showSelector">
 				<scroll-view scroll-y="true" class="uni-combox__selector-scroll">
 					<view class="uni-combox__selector-empty" v-if="filterCandidatesLength === 0">
@@ -118,15 +118,18 @@
 		/* #ifndef APP-NVUE */
 		display: flex;
 		/* #endif */
-		height: 40px;
+		width: 200rpx;
+		height: 40rpx;
 		flex-direction: row;
 		align-items: center;
-		/* border-bottom: solid 1px #DDDDDD;
- */
+		margin: 10rpx 15rpx;
+		padding: 5rpx;
+		border: solid 1px #909090;
+		border-radius: 10rpx;
 	}
 
 	.uni-combox__label {
-		font-size: 16px;
+		font-size: 32px;
 		line-height: 22px;
 		padding-right: 10px;
 		color: #999999;
@@ -144,9 +147,10 @@
 
 	.uni-combox__input {
 		flex: 1;
-		font-size: 16px;
+		font-size: 30rpx;
 		height: 22px;
 		line-height: 22px;
+		text-align: center;
 	}
 
 	.uni-combox__input-arrow {

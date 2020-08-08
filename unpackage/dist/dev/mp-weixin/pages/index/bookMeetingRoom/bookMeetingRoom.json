@@ -1,4 +1,7 @@
 {
   "navigationBarTitleText": "订会议室",
-  "usingComponents": {}
+  "usingComponents": {
+    "meeting-room-list": "/components/meetingRoomList/meetingRoomList",
+    "meeting-room-header": "/components/meetingRoomHeader/meetingRoomHeader"
+  }
 }

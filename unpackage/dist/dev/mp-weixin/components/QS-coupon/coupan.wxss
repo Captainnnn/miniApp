@@ -1,0 +1,79 @@
+
+.bg{
+	background: url("http://imgsrc.baidu.com/forum/w%3D580/sign=f992cfd546fbfbeddc59367748f1f78e/6c7667d0f703918f03d163205c3d269758eec4ad.jpg");
+	background-repeat: repeat-y;
+	background-size: contain;
+	background-origin: border-box;
+	background-size: 100vw 100vh;
+}
+.coupon{
+	width: 600rpx;
+	height: 234rpx;
+}
+.marginTop_45rpx {
+	margin-top: 45rpx;
+}
+.null_20rpx{
+	height: 20rpx;
+}
+.fontSize_21rpx {
+	font-size: 21rpx;
+}
+.fontSize_33rpx {
+	font-size: 33rpx;
+}
+.fontSize_23rpx {
+	font-size: 23rpx;
+}
+.flex_column_between_none {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
+.padding_15rpx {
+	padding: 15rpx;
+}
+.flex_row {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+}
+.flex_row_c_c {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+}
+.flex_column {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+}
+.width100 {
+	width: 100%;
+}
+

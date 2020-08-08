@@ -2,7 +2,7 @@
 	<view>
 		
 		
-		
+		<meeting-room-header></meeting-room-header>
 		<meeting-room-list></meeting-room-list>
 		
 		
@@ -17,6 +17,7 @@
 
 <script>
 	import meetingRoomList from "../../../components/meetingRoomList/meetingRoomList.vue"
+	import meetingRoomHeader from "../../../components/meetingRoomHeader/meetingRoomHeader.vue"
 	
 	export default {
 		data() {
@@ -28,7 +29,8 @@
 			
 		},
 		components:{
-			meetingRoomList
+			meetingRoomList,
+			meetingRoomHeader
 		}
 	}
 </script>

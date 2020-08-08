@@ -1,0 +1,34 @@
+
+.container{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	width:88vw;
+	margin: 30rpx auto;
+	background-color: #FFFFFF;
+	border-radius: 30rpx;
+}
+.piturebox{
+	width:100rpx;
+	height:250rpx;
+	margin: 10rpx auto;
+}
+.right{
+	width: 70vw;
+	height: 250rpx;
+	position: relative;
+	padding-top: 8rpx;
+}
+.piture{
+	height: 100rpx;
+	width: 100rpx;
+}
+.top{
+	height: 50rpx;
+}
+.bottom{
+	height: 200rpx;
+	margin-top: 4rpx;
+}
+
+

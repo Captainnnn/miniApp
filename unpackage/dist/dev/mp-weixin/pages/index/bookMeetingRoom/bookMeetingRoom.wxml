@@ -1,1 +1,1 @@
-<view>订会议室</view>
+<view><meeting-room-header vue-id="7461cafe-1" bind:__l="__l"></meeting-room-header><meeting-room-list vue-id="7461cafe-2" bind:__l="__l"></meeting-room-list></view>

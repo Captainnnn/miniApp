@@ -1,0 +1,9 @@
+
+.textarea{
+	width: 90vw;
+	height:50vh; 
+	border-radius:20rpx;
+	background-color:#EDE1D9;
+	margin: 20rpx auto;
+}
+

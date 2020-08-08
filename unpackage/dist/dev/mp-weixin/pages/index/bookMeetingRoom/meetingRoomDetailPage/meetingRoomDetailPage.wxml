@@ -1,0 +1,1 @@
+<view><meeting-room-detail vue-id="a28d119e-1" meetingRoomId="{{meetingRoomId}}" bind:__l="__l"></meeting-room-detail></view>

@@ -97,7 +97,10 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
   },
   onHide: function onHide() {
     console.log('App Hide');
-  } };exports.default = _default;
+  },
+  //定义全局数据
+  globalData: {
+    baseUrl: "http://hengistchan.xyz:8001/font/" } };exports.default = _default;
 
 /***/ }),
 /* 8 */

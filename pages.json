@@ -82,6 +82,9 @@
 	}, {
 		"path": "components/QS-coupon/coupan",
 		"style": {}
+	}, {
+		"path": "pages/index/bookMeetingRoom/meetingRoomDetailPage/meetingRoomDetailPage",
+		"style": {}
 	}],
 	"globalStyle": {
 		"navigationBarTextStyle": "white",
